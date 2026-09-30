@@ -1,0 +1,37 @@
+# Page 2 — QuickFund LOS Domain
+
+### Core Entities
+
+* **Business**
+* **Person**
+* **Loan Application**
+* **Loan Product**
+* **Document**
+* **Verification**
+* **Assessment**
+* **Decision**
+* **Loan Offer**
+
+### Core Relationships
+
+```text
+Person → owns/represents → Business
+
+Business → submits → Loan Application
+
+Loan Application → requests → Loan Product
+
+Loan Application → requires → Document
+
+Document → undergoes → Verification
+
+Loan Application → undergoes → Assessment
+
+Assessment → produces → Decision
+
+Decision → produces → Loan Offer
+```
+
+### Core LOS Flow
+
+**Application → Documents → Verification → Assessment → Decision → Offer → Acceptance → Disbursement**

@@ -1,0 +1,31 @@
+BUSINESS
+   │
+   ├── has ──► PERSON(s)
+   │
+   └── submits ──► LOAN APPLICATION
+                         │
+                         ├── for ──► LOAN PRODUCT
+                         │
+                         ├── involves ──► PERSON(s)
+                         │                    │
+                         │                    └── Role
+                         │                       (Owner /
+                         │                        Guarantor /
+                         │                        Co-borrower /
+                         │                        Representative)
+                         │
+                         ├── has ──► DOCUMENT(s)
+                         │                 │
+                         │                 └── VERIFICATION(s)
+                         │
+                         ├── goes through ──► ASSESSMENT(s)
+                         │                         │
+                         │                         └── DECISION
+                         │
+                         ├── maintains ──► STATUS HISTORY
+                         │
+                         └── produces ──► LOAN OFFER
+                                             │
+                                             └──► DISBURSEMENT
+                                                      │
+                                                      └──► LOAN

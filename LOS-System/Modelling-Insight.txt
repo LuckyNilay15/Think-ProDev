@@ -1,0 +1,62 @@
+# Page 3 — Important Modelling Insights
+
+### 1. Business ≠ Application
+
+Business exists independently.
+
+One business can have multiple applications.
+
+### 2. Person ≠ Business
+
+A person acts on behalf of the business.
+
+Their role may differ per application.
+
+```text
+Person → Application Relationship → Application
+```
+
+Possible roles:
+**Owner / Applicant / Representative / Guarantor / Co-borrower**
+
+### 3. Document ≠ Verification
+
+Document can be:
+
+**Uploaded → Rejected → Re-uploaded → Verified**
+
+Therefore verification history may matter.
+
+### 4. Product ≠ Offer
+
+**Loan Product** = general configuration/rules.
+
+**Loan Offer** = specific terms given to one application.
+
+Product changes should not rewrite historical offers.
+
+### 5. Current Status ≠ Status History
+
+```text
+Application
+├── currentStatus
+└── statusHistory[]
+```
+
+History can record:
+
+**Previous Status → New Status → Who → When → Why**
+
+### 6. Fact ≠ Just a Value
+
+Example:
+
+**Turnover = ₹1Cr**
+
+may also require:
+
+**Source + Evidence + Verification + Timestamp**
+
+### Golden Question
+
+> **"What business concept am I actually representing?"**

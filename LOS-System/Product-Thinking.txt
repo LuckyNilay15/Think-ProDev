@@ -1,0 +1,31 @@
+Requirement → Domain Thinking
+
+### Goal
+
+Convert a Product requirement into a **business/domain model** before thinking about code or database tables.
+
+### Mental Flow
+
+**Requirement → Why → Actors → Entities → Relationships → Flow → States → History → Rules → Model**
+
+### Key Principle
+
+Don't ask only:
+
+> "What fields do I need?"
+
+Ask:
+
+> **"What real-world things exist, why do they exist, and how do they interact?"**
+
+### Entity Test
+
+A concept is likely an entity when it has:
+
+* Identity
+* Own attributes
+* Relationships
+* Lifecycle
+* Independent business meaning/rules
+
+**Persistence alone ≠ Entity.**
